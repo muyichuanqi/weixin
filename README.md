@@ -31,9 +31,7 @@
           'Content-Type': 'application/json'
         }, 
         success: function(res){
-
          if (res.data.error_code == 0) {
-
             that.setData({
             topNews:res.data.result.data.slice(0,5),
             techNews:res.data.result.data
@@ -43,8 +41,6 @@
           }
         }
       })
-
-      //console.log('onLoad')
       var that = this
       //调用应用实例的方法获取全局数据
       app.getUserInfo(function(userInfo){
