@@ -5,7 +5,7 @@
   www.36zhen.com
   
 ## index.js
-  var app = getApp()
+  var app = getApp();
   Page({
     data: {
       userInfo:{},
