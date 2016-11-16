@@ -5,18 +5,21 @@
   www.36zhen.com
 ## index.js
   var app = getApp();
+  
   Page({
     data: {
       userInfo:{},
       topNews:[],
       techNews:[]
     },
+    
     //事件处理函数
     bindViewTap: function(event) {
       wx.navigateTo({
          url: "../detail/detail?title="+event.currentTarget.dataset.title+"&url="+event.currentTarget.dataset.url
       })
     },
+    
     onLoad: function () {
       //网络请求
       wx.request({
